@@ -5,10 +5,16 @@
 	<title>Météo</title>
 	<link rel="stylesheet" href="assets/css/import.css" />
 	<link rel="stylesheet" href="assets/css/reset.css" />
-	<link rel="stylesheet" href="assets/css/preloader.csss" />
+	<link rel="stylesheet" href="assets/css/preloader.css" /> <!-- un "s" de trop à css -->
 	<link rel="stylesheet" href="assets/css/style.css" />
-	<script src='assets/js/script.js'></script>
-<head>
+	
+	<!-- Favicons -->
+	<link rel="icon" href="favicon.ico">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	
+	<!-- Script déplacé en bas APRES jQuery -->
+	
+</head> <!-- balise head mal fermée -->
 <body>
 
 	<div class="preloader">
@@ -40,7 +46,7 @@
 		<section class="contenu">
 		    <h1>
 		    	Limoges, FR 
-		    	<a href="http://maps.google.com/maps?q=45.831532,1.2578 class="lk" target="_blank" title="Voir sur une carte">
+		    	<a href="http://maps.google.com/maps?q=45.831532,1.2578" class="lk" target="_blank" title="Voir sur une carte"> <!-- href mal fermé -->
 		    		Voir sur une carte
 		    	</a>
 		    </h1>
@@ -50,7 +56,7 @@
 	    		</div>
 			    <div class="temperature entypo-light-up">
 			    	<h2>
-			    		16.06<span class="degree-symbol">°</span>C
+			    		16.06<span class="degree-symbol">°C</span>
 			    	</h2>
 			    </div>
 			    <ul>
@@ -74,7 +80,7 @@
 	    		</div>
 			    <div class="temperature entypo-light-up">
 				    <h2>
-						15.72<span class="degree-symbol">°</span>C
+						15.72<span class="degree-symbol">°C</span>
 				    </h2>
 			    </div>
 			    <ul>
@@ -99,7 +105,7 @@
 
 			    <div class="temperature entypo-light-up">
 					<h2>
-			      		14.69<span class="degree-symbol">°</span>C
+			      		14.69<span class="degree-symbol">°C</span>
 			      	</h2>
 			    </div>
 			    <ul>
@@ -124,7 +130,10 @@
 		    </div>
 		</section>
 	</div>
+	
+	<!-- Scripts -->
 	<script src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+	<script src='assets/js/script.js'></script>
 	
 </body>
 </html>   
